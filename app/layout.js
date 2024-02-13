@@ -1,5 +1,6 @@
 import Link from "next/link";
 import logo from "@/assets/logo.png";
+import "@/app/globals.css";
 
 export const metadata = {
   title: "Damiano Bacci",
