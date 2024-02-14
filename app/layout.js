@@ -1,5 +1,4 @@
 import Link from "next/link";
-import logo from "@/assets/logo.png";
 import "@/app/globals.css";
 
 export const metadata = {
@@ -14,15 +13,25 @@ export default function RootLayout({ children }) {
         <header>
           <nav>
             <ul>
-              <Link href="/">
-                <li>Damiano</li>
-              </Link>
-              <Link href="/blog">
-                <li>Blog</li>
-              </Link>
-              <Link href="/about">
-                <li>About</li>
-              </Link>
+              <li>
+                <Link
+                  href="/"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
+                >
+                  Damiano
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+
+              <li>
+                <Link href="/about">About</Link>
+              </li>
             </ul>
           </nav>
         </header>
