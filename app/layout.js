@@ -21,16 +21,32 @@ export default function RootLayout({ children }) {
                     color: "white",
                   }}
                 >
-                  Damiano
+                  DB
                 </Link>
               </li>
 
               <li>
-                <Link href="/blog">Blog</Link>
+                <Link
+                  href="/blog"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
+                >
+                  Blog
+                </Link>
               </li>
 
               <li>
-                <Link href="/about">About</Link>
+                <Link
+                  href="/about"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                  }}
+                >
+                  About
+                </Link>
               </li>
             </ul>
           </nav>
