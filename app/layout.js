@@ -12,11 +12,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <Link href="/">
-            <img src={logo.src} alt="" />
-          </Link>
           <nav>
             <ul>
+              <Link href="/">
+                <li>Damiano</li>
+              </Link>
               <Link href="/blog">
                 <li>Blog</li>
               </Link>

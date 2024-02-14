@@ -6,5 +6,21 @@
 
 body {
   color: white;
-  background-color: black;
+  background-color: grey;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+li {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 400px) {
+  body {
+    margin: 0 25rem;
+  }
 }
