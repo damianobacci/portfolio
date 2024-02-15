@@ -24,6 +24,15 @@ nav ul li:first-child {
   margin-right: auto;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 400px) {
   body {
     margin: 2rem 25rem;

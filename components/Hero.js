@@ -1,4 +1,5 @@
 "use client";
+import styles from "./Hero.module.css";
 
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
@@ -15,7 +16,6 @@ export default function Hero() {
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
@@ -24,7 +24,8 @@ export default function Hero() {
     <>
       <div>
         <p>
-          I am a junior <span ref={el} />
+          I am a junior
+          <br /> <span ref={el} className={styles.typed} />
           developer
         </p>
         <p>searching for his way...</p>

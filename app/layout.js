@@ -14,39 +14,15 @@ export default function RootLayout({ children }) {
           <nav>
             <ul>
               <li>
-                <Link
-                  href="/"
-                  style={{
-                    textDecoration: "none",
-                    color: "white",
-                  }}
-                >
-                  DB
-                </Link>
+                <Link href="/">DB</Link>
               </li>
 
               <li>
-                <Link
-                  href="/blog"
-                  style={{
-                    textDecoration: "none",
-                    color: "white",
-                  }}
-                >
-                  Blog
-                </Link>
+                <Link href="/blog">Blog</Link>
               </li>
 
               <li>
-                <Link
-                  href="/about"
-                  style={{
-                    textDecoration: "none",
-                    color: "white",
-                  }}
-                >
-                  About
-                </Link>
+                <Link href="/about">About</Link>
               </li>
             </ul>
           </nav>
