@@ -1,5 +1,8 @@
 "use client";
 import styles from "./Hero.module.css";
+import logo from "@/assets/logo.png";
+import Image from "next/image";
+import Eyes from "./Eyes/Eyes";
 
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
@@ -30,9 +33,12 @@ export default function Hero() {
         </p>
         <p>searching for his way...</p>
       </div>
-      <div>
-        <p>Available for work</p>
+      <div className={styles.available}>
+        <p>
+          <span className={styles.dot}></span> Available for work
+        </p>
       </div>
+      <Eyes />
     </>
   );
 }

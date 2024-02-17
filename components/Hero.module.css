@@ -1,3 +1,29 @@
 .typed {
   font-size: 40px;
 }
+
+.available {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0.8rem;
+  margin: 1rem 0;
+}
+
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: #00e870;
+  border-radius: 50%;
+  display: inline-block;
+  animation: 1s blink ease infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

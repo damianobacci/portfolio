@@ -1,0 +1,17 @@
+.outline {
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  padding: 0.3rem;
+  border-radius: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  transition: all 0.3s;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}
+
+.outline:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
