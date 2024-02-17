@@ -16,7 +16,6 @@ export default function RootLayout({ children }) {
               <li>
                 <Link href="/">DB</Link>
               </li>
-
               <li>
                 <Link href="/projects">Projects</Link>
               </li>

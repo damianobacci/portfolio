@@ -26,15 +26,16 @@ nav ul li:first-child {
 
 a {
   color: white;
-  text-decoration: underline;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #00e870;
 }
 
 @media (min-width: 400px) {
   body {
-    margin: 2rem 25rem;
+    width: 40vw;
+    margin: 1rem auto;
   }
 }
