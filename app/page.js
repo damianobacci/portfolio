@@ -1,6 +1,15 @@
 import Hero from "@/components/Hero";
+import PostsList from "@/components/Posts/PostsList";
 import ProjectBox from "@/components/Projects/ProjectBox";
 import Link from "next/link";
+
+const DUMMY_POSTS = [
+  {
+    date: "2024-04-25",
+    title: "Why React is Awesome",
+    slug: "why-react-is-awesome",
+  },
+];
 
 export default function Home() {
   return (
@@ -10,7 +19,7 @@ export default function Home() {
         <h2 className="title">Featured Projects</h2>
         <ProjectBox
           title="Remembrify"
-          description="asd"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
           more="/projects/remembrify"
           live="/"
           code="/"
@@ -28,23 +37,11 @@ export default function Home() {
           live="/"
           code="/"
         />
-        <Link href="/projects">View all projects</Link>
+        <Link href="/projects">View all projects & experiments</Link>
       </section>
       <section>
         <h2 className="title">Blog</h2>
-        <div>
-          <p>April 24th, 2024</p>
-          <Link href="/blog">
-            <h3> Why React is Awesome</h3>
-          </Link>
-        </div>
-        <div>
-          <p>April 24th, 2024</p>
-          <Link href="/blog">
-            <h3> Why Remix Sucks</h3>
-          </Link>
-        </div>
-        <Link href="/blog">View all posts</Link>
+        <PostsList posts={DUMMY_POSTS} />
       </section>
     </main>
   );
