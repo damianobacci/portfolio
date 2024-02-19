@@ -9,6 +9,21 @@ const DUMMY_POSTS = [
     title: "Why React is Awesome",
     slug: "why-react-is-awesome",
   },
+  {
+    date: "2024-04-25",
+    title: "Why React is Awesome",
+    slug: "why-react-is-awesome2",
+  },
+  {
+    date: "2024-04-25",
+    title: "Why React is Awesome",
+    slug: "why-react-is-awesome3",
+  },
+  {
+    date: "2024-04-25",
+    title: "Why React is Awesome",
+    slug: "why-react-is-awesome4",
+  },
 ];
 
 export default function Home() {
@@ -42,6 +57,7 @@ export default function Home() {
       <section>
         <h2 className="title">Blog</h2>
         <PostsList posts={DUMMY_POSTS} />
+        <Link href="/blog">View all posts</Link>
       </section>
     </main>
   );

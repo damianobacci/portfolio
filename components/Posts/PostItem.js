@@ -12,7 +12,7 @@ export default function PostItem(props) {
 
   const fullURL = `/blog/${slug}`;
   return (
-    <li>
+    <li className={styles.item}>
       <div className={styles.post}>
         <time>{formattedDate}</time>
         <Link href={fullURL}>

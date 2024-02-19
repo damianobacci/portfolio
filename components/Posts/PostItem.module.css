@@ -1,3 +1,7 @@
 .post {
   margin: 1rem 0;
 }
+
+.item {
+  list-style: none;
+}

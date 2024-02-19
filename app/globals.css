@@ -10,10 +10,6 @@ body {
   font-family: "IBM Plex Mono", monospace;
 }
 
-li {
-  list-style: none;
-}
-
 nav > ul {
   display: flex;
   justify-content: flex-end;
@@ -22,6 +18,10 @@ nav > ul {
 
 nav ul li:first-child {
   margin-right: auto;
+}
+
+nav > ul > li {
+  list-style: none;
 }
 
 a {

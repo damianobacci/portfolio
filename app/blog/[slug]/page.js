@@ -1,7 +1,4 @@
+import PostContent from "@/components/Posts/PostDetails/PostContent";
 export default function BlogPostPage({ params }) {
-  return (
-    <main>
-      <h1>{params.slug}</h1>
-    </main>
-  );
+  return <PostContent />;
 }
