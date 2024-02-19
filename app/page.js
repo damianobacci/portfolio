@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import PostsList from "@/components/Posts/PostsList";
 import ProjectBox from "@/components/Projects/ProjectBox";
 import Link from "next/link";
+import { Press_Start_2P } from "@next/font/google";
 
 const DUMMY_POSTS = [
   {

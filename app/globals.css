@@ -42,4 +42,6 @@ a:hover {
 
 .title {
   color: #00e870;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
