@@ -1,21 +1,15 @@
 import styles from "./ProjectBox.module.css";
 import OutlineButton from "../UI/OutlineButton";
 
-export default function ProjectBox() {
+export default function ProjectBox({ title, description, more, live, code }) {
   return (
-    <div>
+    <div className={styles.container}>
       <div>
-        <img></img>
-      </div>
-      <div>
-        <h3>Title</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maiores
-          aperiam nesciunt officiis ex beatae consectetur odit tempore?
-        </p>
-        <OutlineButton link="/test">Read More</OutlineButton>
-        <button>View Live</button>
-        <button>View Code</button>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <OutlineButton link={more}>Read More</OutlineButton>
+        {live && <OutlineButton link={live}>View Live</OutlineButton>}
+        {code && <OutlineButton link={code}>View Code</OutlineButton>}
       </div>
     </div>
   );

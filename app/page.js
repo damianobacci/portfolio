@@ -7,14 +7,31 @@ export default function Home() {
     <main>
       <Hero />
       <section>
-        <h2>Featured projects</h2>
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
+        <h2 className="title">Featured Projects</h2>
+        <ProjectBox
+          title="Remembrify"
+          description="asd"
+          more="/projects/remembrify"
+          live="/"
+          code="/"
+        />
+        <ProjectBox
+          title="EcoWatcher"
+          description="asd"
+          more="/projects/ecowatcher"
+          code="/"
+        />
+        <ProjectBox
+          title="CityEars"
+          description="asd"
+          more="/projects/cityears"
+          live="/"
+          code="/"
+        />
         <Link href="/projects">View all projects</Link>
       </section>
       <section>
-        <h2>Blog</h2>
+        <h2 className="title">Blog</h2>
         <div>
           <p>April 24th, 2024</p>
           <Link href="/blog">
