@@ -12,17 +12,19 @@ export default function PostContent({ post }) {
       if (node.children[0].tagName === "img") {
         const image = node.children[0];
         return (
-          <div className={classes.image}>
+          <div>
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
-              alt={image.alt}
+              alt={image.properties.alt}
               width={0}
               height={0}
               sizes="100vw"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
         );
       }
+      return <p>{paragraph.children}</p>;
     },
     code(code) {
       const { className, children } = code;
