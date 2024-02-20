@@ -1,18 +1,11 @@
 import PostHeader from "./PostHeader";
 import ReactMarkdow from "react-markdown";
 
-const DUMMY_POST = {
-  date: "2024-04-25",
-  title: "Why React is Awesome",
-  slug: "why-react-is-awesome",
-  content: "* This is a first post in Markdown",
-};
-
-export default function PostContent() {
+export default function PostContent({ post }) {
   return (
     <article>
-      <PostHeader title={DUMMY_POST.title} date={DUMMY_POST.date} />
-      <ReactMarkdow>{DUMMY_POST.content}</ReactMarkdow>
+      <PostHeader title={post.title} date={post.date} />
+      <ReactMarkdow>{post.content}</ReactMarkdow>
     </article>
   );
 }

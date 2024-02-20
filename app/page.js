@@ -1,32 +1,12 @@
 import Hero from "@/components/Hero";
 import PostsList from "@/components/Posts/PostsList";
 import ProjectBox from "@/components/Projects/ProjectBox";
+import { getLastThreePosts } from "@/lib/posts-util";
 import Link from "next/link";
 
-const DUMMY_POSTS = [
-  {
-    date: "2024-04-25",
-    title: "Why React is Awesome",
-    slug: "why-react-is-awesome",
-  },
-  {
-    date: "2024-04-25",
-    title: "Why React is Awesome",
-    slug: "why-react-is-awesome2",
-  },
-  {
-    date: "2024-04-25",
-    title: "Why React is Awesome",
-    slug: "why-react-is-awesome3",
-  },
-  {
-    date: "2024-04-25",
-    title: "Why React is Awesome",
-    slug: "why-react-is-awesome4",
-  },
-];
-
 export default function Home() {
+  const lastPosts = getLastThreePosts();
+
   return (
     <main>
       <Hero />
@@ -56,7 +36,7 @@ export default function Home() {
       </section>
       <section>
         <h2 className="title">Blog</h2>
-        <PostsList posts={DUMMY_POSTS} />
+        <PostsList posts={lastPosts} />
         <Link href="/blog">View all posts</Link>
       </section>
     </main>
