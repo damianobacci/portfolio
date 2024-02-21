@@ -1,0 +1,11 @@
+.work {
+  display: flex;
+}
+
+.date {
+  flex: 1;
+}
+
+.details {
+  flex: 1;
+}

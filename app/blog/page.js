@@ -5,7 +5,7 @@ export default function BlogPage() {
   const allPosts = getAllPosts();
   return (
     <main>
-      <h1>Blog</h1>
+      <h1 className="title">Blog</h1>
       <PostsList posts={allPosts} />
     </main>
   );
