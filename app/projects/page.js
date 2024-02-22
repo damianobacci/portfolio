@@ -27,17 +27,17 @@ export default function ProjectsPage() {
       <ProjectBox
         title="Three.js Windows 95 Maze"
         description="This project made in Three.js is a simplified reconstrunction of the popular Windows 3D maze."
-        more="/projects/quote-keeper"
+        more="/projects/threejs-win95-maze"
       />
       <ProjectBox
         title="Javascript Rock, Paper & Scissors"
         description="A small Javascript rendition of the classic rock, paper and scissors game."
-        more="/projects/quote-keeper"
+        more="/projects/js-rock-paper-scissors"
       />
       <ProjectBox
         title="The Legend of Yota"
         description="The Legend of Yota is a text-based adventure game written in C, in the style of the great Infocom classics like Zork, Enchanter and Planetfall."
-        more="/projects/quote-keeper"
+        more="/projects/the-legend-of-yota"
       />
     </main>
   );
