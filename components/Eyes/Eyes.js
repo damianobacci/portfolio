@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./Eyes.css";
 
 const Eyes = () => {
@@ -10,6 +10,11 @@ const Eyes = () => {
 
   const playAudio = () => {
     audioRef.current.play();
+    const pupils = eyesRef.current.querySelectorAll(".pupil");
+    pupils.forEach((pupil) => pupil.classList.add("pupil-animate"));
+    audioRef.current.onended = () => {
+      pupils.forEach((pupil) => pupil.classList.remove("pupil-animate"));
+    };
   };
 
   useEffect(() => {

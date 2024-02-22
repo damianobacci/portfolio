@@ -31,12 +31,12 @@ export default function ProjectsPage() {
       />
       <ProjectBox
         title="Javascript Rock, Paper & Scissors"
-        description="asd"
+        description="A small Javascript rendition of the classic rock, paper and scissors game."
         more="/projects/quote-keeper"
       />
       <ProjectBox
         title="The Legend of Yota"
-        description="asd"
+        description="The Legend of Yota is a text-based adventure game written in C, in the style of the great Infocom classics like Zork, Enchanter and Planetfall."
         more="/projects/quote-keeper"
       />
     </main>

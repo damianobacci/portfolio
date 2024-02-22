@@ -51,3 +51,5 @@ code(code) {
       );
     },
 ```
+
+An exciting journey lies ahead!
