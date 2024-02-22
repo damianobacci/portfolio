@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import PostsList from "@/components/Posts/PostsList";
 import ProjectBox from "@/components/Projects/ProjectBox";
+import Splash from "@/components/Splash/Splash";
 import { getLastThreePosts } from "@/lib/posts-util";
 import Link from "next/link";
 
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <main>
+      {/* <Splash /> */}
       <Hero />
       <section>
         <h2 className="title">Featured Projects</h2>
