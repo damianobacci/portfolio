@@ -1,7 +1,5 @@
 "use client";
 import styles from "./Hero.module.css";
-import logo from "@/assets/logo.png";
-import Image from "next/image";
 import Eyes from "./Eyes/Eyes";
 
 import { useRef, useEffect } from "react";
@@ -11,7 +9,7 @@ export default function Hero() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["frontend", "backend", "fullstack", "system"],
+      strings: ["frontend", "backend", "fullstack"],
       typeSpeed: 80,
       backSpeed: 50,
       loop: true,

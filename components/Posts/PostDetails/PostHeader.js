@@ -10,11 +10,14 @@ export default function PostHeader({ title, date }) {
 
   return (
     <header>
-      <h1>{title}</h1>
+      <h1 style={{ marginTop: "0.5em" }}>{title}</h1>
       <time>{formattedDate}</time>
-      <Link href="/blog">
-        <IoIosArrowRoundBack /> Go back
-      </Link>
+      <div style={{ marginTop: "1em", marginBottom: "1em" }}>
+        <Link href="/blog">
+          <IoIosArrowRoundBack style={{ verticalAlign: "middle" }} />
+          Go back
+        </Link>
+      </div>
     </header>
   );
 }

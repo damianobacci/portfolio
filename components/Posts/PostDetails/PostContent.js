@@ -19,23 +19,25 @@ export default function PostContent({ post }) {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto", marginBottom: "1em" }}
             />
           </div>
         );
       }
-      return <p>{paragraph.children}</p>;
+      return <p style={{ marginBottom: "1em" }}>{paragraph.children}</p>;
     },
     code(code) {
       const { className, children } = code;
       const language = className.split("-")[1];
       return (
-        <SyntaxHighlighter
-          style={atomDark}
-          language={language}
-          children={children}
-          wrapLongLines={true}
-        />
+        <div style={{ marginBottom: "1em" }}>
+          <SyntaxHighlighter
+            style={atomDark}
+            language={language}
+            children={children}
+            wrapLongLines={true}
+          />
+        </div>
       );
     },
   };

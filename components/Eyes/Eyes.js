@@ -4,8 +4,13 @@ import "./Eyes.css";
 
 const Eyes = () => {
   const eyesRef = useRef(null);
+  const audioRef = useRef(null);
   const [lastPosition, setLastPosition] = useState({ x: 0, y: 0 });
   const [totalRotationRadians, setTotalRotationRadians] = useState(0);
+
+  const playAudio = () => {
+    audioRef.current.play();
+  };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -28,7 +33,7 @@ const Eyes = () => {
         const newTotalRotationRadians = totalRotationRadians + change;
 
         if (Math.abs(newTotalRotationRadians) >= 2 * Math.PI * 5) {
-          console.log("Insert effect here");
+          playAudio();
           setTotalRotationRadians(0);
         } else {
           setTotalRotationRadians(newTotalRotationRadians);
@@ -70,6 +75,7 @@ const Eyes = () => {
       <div className="eye">
         <div className="pupil"></div>
       </div>
+      <audio ref={audioRef} src="/audio.mp3"></audio>
     </div>
   );
 };

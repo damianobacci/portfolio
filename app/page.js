@@ -14,23 +14,18 @@ export default function Home() {
         <h2 className="title">Featured Projects</h2>
         <ProjectBox
           title="Remembrify"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+          description="Lorem"
           more="/projects/remembrify"
-          live="/"
-          code="/"
         />
         <ProjectBox
           title="EcoWatcher"
           description="asd"
           more="/projects/ecowatcher"
-          code="/"
         />
         <ProjectBox
           title="CityEars"
           description="asd"
           more="/projects/cityears"
-          live="/"
-          code="/"
         />
         <Link href="/projects">View all projects & experiments</Link>
       </section>

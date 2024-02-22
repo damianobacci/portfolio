@@ -8,6 +8,7 @@ body {
   color: white;
   background-color: black;
   font-family: "IBM Plex Mono", monospace;
+  overflow-y: scroll;
 }
 
 nav > ul {
@@ -33,15 +34,35 @@ a:hover {
   color: #00e870;
 }
 
-@media (min-width: 400px) {
-  body {
-    width: 40vw;
-    margin: 1rem auto;
-  }
-}
-
 .title {
   color: #00e870;
   letter-spacing: 3px;
   text-transform: uppercase;
+  margin-top: 0.5em;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00e870;
+}
+
+@media (min-width: 450px) {
+  body {
+    width: 40vw;
+    margin: 1rem auto;
+  }
 }
