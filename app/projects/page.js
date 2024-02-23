@@ -6,7 +6,7 @@ export default function ProjectsPage() {
       <h1 className="title">All Projects</h1>
       <ProjectBox
         title="Remembrify"
-        description="Remembrify is a Single Page Application (SPA) made in React. The app allows you to set multiple reminders with a sound alarm, helping you maintain your health routines while you are at your desk, without losing focus."
+        description="Remembrify is a SPA made in React to mantain healthy routines while working."
         more="/projects/remembrify"
       />
       <ProjectBox
@@ -26,12 +26,12 @@ export default function ProjectsPage() {
       />
       <ProjectBox
         title="Three.js Windows 95 Maze"
-        description="This project made in Three.js is a simplified reconstrunction of the popular Windows 3D maze."
+        description="A simplified reconstrunction of the popular Windows 3D maze, made in Three.js"
         more="/projects/threejs-win95-maze"
       />
       <ProjectBox
         title="Javascript Rock, Paper & Scissors"
-        description="A small Javascript rendition of the classic rock, paper and scissors game."
+        description="A Javascript rendition of the classic rock, paper and scissors game."
         more="/projects/js-rock-paper-scissors"
       />
       <ProjectBox
