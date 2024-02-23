@@ -20,7 +20,36 @@ export default function Remembrify() {
       <OutlineButton icon="live" link="">
         View Live
       </OutlineButton>
+      <Image
+        src="/images/projects/remembrify.jpg"
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto",
+          marginBottom: "0.5em",
+          marginTop: "1em",
+        }}
+      />
       <h2 className="projectTitle">Project Purpose and Goal</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum
+        nisi quos vero reiciendis sint nihil quod, cupiditate autem, iure animi
+        qui illo accusamus accusantium, voluptatibus magni ad architecto. Iusto?
+      </p>
+      <Image
+        src="/images/projects/remembrify.jpg"
+        width={0}
+        height={0}
+        sizes="100vw"
+        style={{
+          width: "100%",
+          height: "auto",
+          marginBottom: "0.5em",
+          marginTop: "1em",
+        }}
+      />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum
         nisi quos vero reiciendis sint nihil quod, cupiditate autem, iure animi
