@@ -15,10 +15,13 @@ export default function Remembrify() {
         title="Remembrify"
         description="Remembrify is a Single Page Application (SPA) made in React. The app allows you to set multiple reminders with a sound alarm, helping you to maintain your health routines while you are at your desk, without losing focus."
       />
-      <OutlineButton icon="code" link="">
+      <OutlineButton
+        icon="code"
+        link="https://github.com/damianobacci/health-routines"
+      >
         View Code
       </OutlineButton>
-      <OutlineButton icon="live" link="">
+      <OutlineButton icon="live" link="https://health-routines.vercel.app/">
         View Live
       </OutlineButton>
       <ProjectImage alt="Remembrify" link="/images/projects/remembrify.jpg" />
@@ -50,7 +53,21 @@ export default function Remembrify() {
         together.
       </p>
       <ProjectImage alt="Remembrify" link="/images/projects/remembrify2.jpg" />
-      <p className="projectParagraph">But</p>
+      <p className="projectParagraph">
+        React was the immediate choice. I could simply write the logic for one
+        component and reuse it over and over, the same with all the UI elements
+        like buttons and counters. The app can be a simple browser tab open,
+        running in the background of my work.
+      </p>
+      <ProjectImage alt="Remembrify" link="/images/projects/remembrify3.jpg" />
+      <p className="projectParagraph">
+        With the countdown logic done, I could program a fixed amount of them to
+        suits my needs. But what if a different person was using the app? I
+        decided to use the browser <a href="">LocalStorage</a> to store the data
+        relative to the user's countdown, without relying on an external
+        database. In this way I could keep the app lean, but with a very
+        important feature.
+      </p>
       {/* <SyntaxHighlighter
         style={atomDark}
         language="javascript"
@@ -59,10 +76,19 @@ export default function Remembrify() {
         {code}
       </SyntaxHighlighter> */}
       <h2 className="projectTitle">Lessons Learned</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cum
-        nisi quos vero reiciendis sint nihil quod, cupiditate autem, iure animi
-        qui illo accusamus accusantium, voluptatibus magni ad architecto. Iusto?
+      <p className="projectParagraph">
+        I had to provide some kind of validation logic in the "Add your
+        countdown" component, to not rely on the built-in browser validation
+        logic that could be easily bypassed. The validation logic handles the
+        Change and the Blur events on the form inputs and it was rather
+        cumbersome to write for a two-input form, a valuable lesson for when I
+        will handle a longer form.
+      </p>
+      <p className="projectParagraph">
+        Also, there are some limitations on having the app on a website. It
+        could be a simple executable file to have on you computer. I will
+        consider using <a href="https://www.electronjs.org/">Electron</a> for
+        this in the future.
       </p>
       <ProjectFooter />
     </main>
