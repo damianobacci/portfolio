@@ -11,7 +11,7 @@ export default function ProjectsPage() {
       />
       <ProjectBox
         title="EcoWatcher"
-        description="EcoWatcher is a mobile app made in React Native. You can report litter in your city by simply snapping a photo of the trash and sharing it to the local public administration."
+        description="EcoWatcher is a mobile app made in React Native to report litter in your city by simply snapping a photo."
         more="/projects/ecowatcher"
       />
       <ProjectBox
@@ -34,11 +34,11 @@ export default function ProjectsPage() {
         description="A Javascript rendition of the classic rock, paper and scissors game."
         more="/projects/js-rock-paper-scissors"
       />
-      <ProjectBox
+      {/* <ProjectBox
         title="The Legend of Yota"
         description="The Legend of Yota is a text-based adventure game written in C, in the style of the great Infocom classics like Zork, Enchanter and Planetfall."
         more="/projects/the-legend-of-yota"
-      />
+      /> */}
     </main>
   );
 }

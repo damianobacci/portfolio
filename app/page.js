@@ -16,17 +16,17 @@ export default function Home() {
         <h2 className="title">Featured Projects</h2>
         <ProjectBox
           title="Remembrify"
-          description="Lorem"
+          description="Remembrify is a SPA made in React to mantain healthy routines while working."
           more="/projects/remembrify"
         />
         <ProjectBox
           title="EcoWatcher"
-          description="asd"
+          description="EcoWatcher is a mobile app made in React Native to report litter in your city by simply snapping a photo."
           more="/projects/ecowatcher"
         />
         <ProjectBox
           title="CityEars"
-          description="asd"
+          description="CityEars is a curated list of musical gigs in Italian cities built with Next.js."
           more="/projects/cityears"
         />
         <Link href="/projects">View all projects & experiments</Link>
