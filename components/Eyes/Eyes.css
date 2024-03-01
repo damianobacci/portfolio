@@ -38,3 +38,9 @@ body {
 .pupil-animate {
   animation: rotate-pupil 2s infinite linear;
 }
+
+@media (max-width: 800px) {
+  .eyes {
+    display: none;
+  }
+}
