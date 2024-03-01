@@ -42,15 +42,52 @@ export default function EcoWatcher() {
         alt="Ecowatcher"
         source="/images/projects/ecowatcher/ecowatcher5.jpg"
       />
+      <p className="projectParagraph">
+        I used Mapbox{" "}
+        <a href="https://docs.mapbox.com/api/maps/static-images/">
+          Static Images API
+        </a>{" "}
+        to generate a preview of the location, as well as their{" "}
+        <a href="https://docs.mapbox.com/api/search/geocoding/">
+          Geocoding API
+        </a>{" "}
+        to get an address based on a location.
+      </p>
+      <p className="projectParagraph">
+        The data can then be sent to a specific backend (in my case{" "}
+        <a href="https://firebase.google.com/docs/database">
+          Firebase Realtime Database
+        </a>
+        ) using Axios, or it can be used to generate a tweet with the targeted
+        garbage collection authority (in my case, I am tagging the one in Milan,{" "}
+        <a href="https://twitter.com/amsa_spa/with_replies">AMSA</a>)
+      </p>
+      <MobileImage
+        alt="Ecowatcher"
+        source="/images/projects/ecowatcher/ecowatcher6.jpg"
+      />
       <h2 className="projectTitle">Lessons Learned</h2>
       <p className="projectParagraph">
-        I had to provide some kind of validation logic in the "Add your
-        countdown" component, to not rely on the built-in browser validation
-        logic that could be easily bypassed. The validation logic handles the
-        Change and the Blur events on the form inputs and it was rather
-        cumbersome to write for a two-input form, a valuable lesson for when I
-        will handle a longer form.
+        As my first mobile project, the biggest take home lesson is the
+        difference between Android and iOS development, and how I must take into
+        account both version while building with React Native (and how it's
+        impossible to test the iOS version without Apple devices).
       </p>
+      <p className="projectParagraph">
+        Mobile devices have also to manage different kind of permissions related
+        to the use of the camera, the gallery, the location, and I had to build
+        additional permission logic to handle those, as well as traditional
+        validation logic for the form inputs and the database storing.
+      </p>
+      <p className="projectParagraph">
+        Overall, React Native provides a smooth transition for developers
+        already used to the React environment, greatly simplifying the
+        development of mobile apps.
+      </p>
+      <MobileImage
+        alt="Ecowatcher"
+        source="/images/projects/ecowatcher/ecowatcher7.jpg"
+      />
       <ProjectFooter />
     </main>
   );
