@@ -1,4 +1,5 @@
-import styles from "./about.module.css";
+import JobBox from "@/components/UI/JobBox";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -7,36 +8,20 @@ export default function AboutPage() {
       <p>This is my story.</p>
       <button>Download CV</button>
       <h2>Full professional experience</h2>
-      <div className={styles.work}>
-        <div className={styles.date}>Date of work</div>
-        <div className={styles.details}>
-          <a href="/">ACAPS</a>
-          <p>
-            <em>Data journalist</em>
-          </p>
-
-          <p>
-            Description of the job. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Reprehenderit totam quos pariatur sequi, sapiente
-            eius quod corrupti nesciunt exercitationem qui repellat repudiandae.
-          </p>
-        </div>
-      </div>
-      <div className={styles.work}>
-        <div className={styles.date}>Date of work</div>
-        <div className={styles.details}>
-          <a href="/">Dalk</a>
-          <p>
-            <em>Data/Content journalist</em>
-          </p>
-
-          <p>
-            Description of the job. Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Reprehenderit totam quos pariatur sequi, sapiente
-            eius quod corrupti nesciunt exercitationem qui repellat repudiandae.
-          </p>
-        </div>
-      </div>
+      <JobBox
+        date="Oct 2022 - Jun 2023"
+        link="https://www.acaps.org/"
+        place="ACAPS"
+        job="Data Journalist"
+        description="Asd"
+      />
+      <JobBox
+        date="Nov 2018 - Sep 2022"
+        link="https://www.datatalk.it/"
+        place="Dalk"
+        job="Data/Content Journalist"
+        description="Asd"
+      />
     </main>
   );
 }
