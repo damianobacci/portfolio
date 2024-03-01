@@ -25,7 +25,7 @@ export default function Home() {
           more="/projects/ecowatcher"
         />
         <ProjectBox
-          title="CityEars"
+          title="CityEars (under development)"
           description="CityEars is a curated list of musical gigs in Italian cities built with Next.js."
           more="/projects/cityears"
         />

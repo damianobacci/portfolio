@@ -15,8 +15,8 @@ export default function ProjectsPage() {
         more="/projects/ecowatcher"
       />
       <ProjectBox
-        title="CityEars"
-        description="CityEars is a curated list of musical gigs in Italian cities built with Next.js. Contributors can ask for login access to add events, whose are fetched realtime from a MongoDB database using an API route."
+        title="CityEars (under development)"
+        description="CityEars is a curated list of musical gigs in Italian cities built with Next.js."
         more="/projects/cityears"
       />
       <ProjectBox
