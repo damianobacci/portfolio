@@ -9,7 +9,7 @@ export default function Hero() {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["frontend", "backend", "fullstack"],
+      strings: ["frontend developer", "data journalist"],
       typeSpeed: 80,
       backSpeed: 50,
       loop: true,
@@ -22,12 +22,11 @@ export default function Hero() {
   }, []);
 
   return (
-    <>
+    <div className={styles.hero}>
       <div>
         <p>
-          I am a junior
+          I am a
           <br /> <span ref={el} className={styles.typed} />
-          developer
         </p>
         <p>searching for his way...</p>
       </div>
@@ -37,6 +36,6 @@ export default function Hero() {
         </p>
       </div>
       <Eyes />
-    </>
+    </div>
   );
 }

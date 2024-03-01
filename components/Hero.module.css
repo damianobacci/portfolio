@@ -1,5 +1,9 @@
+.hero {
+  margin: 2em 0;
+}
+
 .typed {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .available {

@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       />
       <ProjectBox
         title="Quote Keeper"
-        description="Quote Keeper is a Google Chrome extension to save your quotes while you are browsing the news. It's designed to help journalists as an 'in-browser' database to store and quickly retrieve informations."
+        description="Quote Keeper is a Google Chrome extension to save your quotes while you are browsing the news."
         more="/projects/quote-keeper"
       />
       <ProjectBox

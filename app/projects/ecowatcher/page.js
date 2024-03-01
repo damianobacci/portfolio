@@ -18,12 +18,12 @@ export default function EcoWatcher() {
       </OutlineButton>
       <h2 className="projectTitle">Project Purpose and Goal</h2>
       <p className="projectParagraph">
-        Unfornutately, trash is a problem of many Italian cities. Some of the
-        cities administration garbage collectors are accepting notifications to
-        help abiding this problem. But notificaiton platforms are difficult to
-        use, you have to log onto their website and provide tons of information.
-        You can also signal them on Twitter (now X), but it lacks the ability
-        in-app to pinpoint the exact location.
+        Unfortunately, trash is a significant issue in many Italian cities. Some
+        city administrations and garbage collectors are open to receiving
+        reports to help tackle this problem. However, their notification
+        platforms can be cumbersome. You're required to log onto their website
+        and submit a lot of information. Although it's possible to report via
+        Twitter (now X), the app doesn't support precise location tagging.
       </p>
       <MobileImage
         alt="Ecowatcher"
@@ -31,35 +31,36 @@ export default function EcoWatcher() {
       />
       <h2 className="projectTitle">Problems and Thought Process</h2>
       <p className="projectParagraph">
-        I began thinking about a lightweight mobile app on mobile to essentially
-        do three things: take a picture of the trash, attach relevant
-        informations, like a description and a location, and either notify the
-        infos to a backend or publish them on Twitter. choose React Native to
-        leverage my knowledge of React and for its multi-platform approach.
+        I contemplated creating a user-friendly mobile app designed to do three
+        essential tasks: capture a photo of the trash, attach important details
+        such as a description and location, and then either send this
+        information to a backend system or post it on Twitter. I chose React
+        Native for development because of my familiarity with React and its
+        cross-platform capabilities.
       </p>
       <MobileImage
         alt="Ecowatcher"
         source="/images/projects/ecowatcher/ecowatcher5.jpg"
       />
       <p className="projectParagraph">
-        I used Mapbox{" "}
+        For location services, I integrated Mapbox's{" "}
         <a href="https://docs.mapbox.com/api/maps/static-images/">
           Static Images API
         </a>{" "}
-        to generate a preview of the location, as well as their{" "}
+        to generate location previews, and their{" "}
         <a href="https://docs.mapbox.com/api/search/geocoding/">
           Geocoding API
         </a>{" "}
-        to get an address based on a location.
+        to find addresses based on the location coordinates.
       </p>
       <p className="projectParagraph">
-        The data can then be sent to a specific backend (in my case{" "}
+        The information can be transmitted to a dedicated backend (in my case,{" "}
         <a href="https://firebase.google.com/docs/database">
           Firebase Realtime Database
         </a>
-        ) using Axios, or it can be used to generate a tweet with the targeted
-        garbage collection authority (in my case, I am tagging the one in Milan,{" "}
-        <a href="https://twitter.com/amsa_spa/with_replies">AMSA</a>)
+        )using Axios. Alternatively, it can be formatted into a tweet, tagging
+        the relevant garbage collection authority (for me, that's{" "}
+        <a href="https://twitter.com/amsa_spa/with_replies">AMSA</a> in Milan).
       </p>
       <MobileImage
         alt="Ecowatcher"
@@ -67,21 +68,20 @@ export default function EcoWatcher() {
       />
       <h2 className="projectTitle">Lessons Learned</h2>
       <p className="projectParagraph">
-        As my first mobile project, the biggest take home lesson is the
-        difference between Android and iOS development, and how I must take into
-        account both version while building with React Native (and how it's
-        impossible to test the iOS version without Apple devices).
+        Embarking on this as my first mobile project, I learned about the
+        distinct differences between Android and iOS development. It's crucial
+        to consider both platforms when building with React Native, especially
+        since testing the iOS version requires Apple devices.
       </p>
       <p className="projectParagraph">
-        Mobile devices have also to manage different kind of permissions related
-        to the use of the camera, the gallery, the location, and I had to build
-        additional permission logic to handle those, as well as traditional
-        validation logic for the form inputs and the database storing.
+        Managing permissions for the camera, gallery, and location services was
+        another layer of complexity. I had to develop additional logic for
+        permissions, as well as for validating form inputs and database storage.
       </p>
       <p className="projectParagraph">
-        Overall, React Native provides a smooth transition for developers
-        already used to the React environment, greatly simplifying the
-        development of mobile apps.
+        In summary, React Native offers an easy transition for developers
+        familiar with the React ecosystem, significantly easing the development
+        process for mobile applications.
       </p>
       <MobileImage
         alt="Ecowatcher"

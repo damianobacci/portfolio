@@ -9,6 +9,7 @@ body {
   background-color: black;
   font-family: "IBM Plex Mono", monospace;
   overflow-y: scroll;
+  padding: 0.5em 1em;
 }
 
 nav > ul {
@@ -64,6 +65,7 @@ a:hover {
   body {
     width: 40vw;
     margin: 1rem auto;
+    padding: 0;
   }
 }
 

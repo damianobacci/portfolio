@@ -10,7 +10,7 @@ export default function PostHeader({ title, date }) {
 
   return (
     <header>
-      <h1 style={{ marginTop: "0.5em" }}>{title}</h1>
+      <h1 style={{ marginTop: "0.8em" }}>{title}</h1>
       <time>{formattedDate}</time>
       <div style={{ marginTop: "1em", marginBottom: "1em" }}>
         <Link href="/blog">
