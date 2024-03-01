@@ -1,6 +1,5 @@
 import ProjectHeader from "@/components/UI/ProjectHeader";
 import ProjectFooter from "@/components/UI/ProjectFooter";
-import ProjectImage from "@/components/UI/ProjectImage";
 import OutlineButton from "@/components/UI/OutlineButton";
 import MobileImage from "@/components/UI/MobileImage";
 
