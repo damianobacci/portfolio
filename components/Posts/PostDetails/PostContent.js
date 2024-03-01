@@ -34,9 +34,10 @@ export default function PostContent({ post }) {
           <SyntaxHighlighter
             style={atomDark}
             language={language}
-            children={children}
             wrapLongLines={true}
-          />
+          >
+            {children}
+          </SyntaxHighlighter>
         </div>
       );
     },
