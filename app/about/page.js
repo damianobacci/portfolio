@@ -6,7 +6,7 @@ export default function AboutPage() {
     <main>
       <h1 className="title">ABOUT</h1>
       <p className="projectParagraph">This is my story.</p>
-      <OutlineButton icon="download" link="https://city-ears.vercel.app/">
+      <OutlineButton icon="download" link="/">
         Download Resume
       </OutlineButton>
       {/* <h2>Full professional experience</h2>
@@ -23,14 +23,7 @@ export default function AboutPage() {
         place="Dalk"
         job="Data/Content Journalist"
         description="Asd"
-      />
-      <JobBox
-        date="Nov 2018 - Sep 2022"
-        link="https://www.datatalk.it/"
-        place="Dalk"
-        job="Data/Content Journalist"
-        description="Asd"
-      /> */}
+      />*/}
     </main>
   );
 }
