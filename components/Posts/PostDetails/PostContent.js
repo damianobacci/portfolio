@@ -24,7 +24,7 @@ export default function PostContent({ post }) {
           </div>
         );
       }
-      return <p style={{ marginBottom: "1em" }}>{paragraph.children}</p>;
+      return <p className="projectParagraph">{paragraph.children}</p>;
     },
     code(code) {
       const { className, children } = code;
