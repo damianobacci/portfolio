@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  margin: 1em 0;
+  gap: 1em;
+}
+
+.list > li {
+  list-style: none;
+}

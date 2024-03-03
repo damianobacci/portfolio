@@ -12,8 +12,9 @@
 
 .outline:hover {
   color: black;
-  background-color: white;
+  background-color: #00e870;
   cursor: pointer;
+  border: 1px solid #00e870;
 }
 
 .icon {

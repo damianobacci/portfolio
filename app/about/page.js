@@ -1,5 +1,6 @@
 import JobBox from "@/components/UI/JobBox";
 import OutlineButton from "@/components/UI/OutlineButton";
+import ContactList from "@/components/UI/ContactList";
 
 export default function AboutPage() {
   return (
@@ -7,8 +8,9 @@ export default function AboutPage() {
       <h1 className="title">ABOUT</h1>
       <p className="projectParagraph">This is my story.</p>
       <OutlineButton icon="download" link="/">
-        Download Resume
+        Download CV
       </OutlineButton>
+      <ContactList />
       {/* <h2>Full professional experience</h2>
       <JobBox
         date="Oct 2022 - Jun 2023"
