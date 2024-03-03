@@ -6,7 +6,11 @@ export default function AboutPage() {
   return (
     <main>
       <h1 className="title">ABOUT</h1>
-      <p className="projectParagraph">This is my story.</p>
+      <h3 className="projectTitle">This is my story</h3>
+      <p className="projectParagraph">
+        Hello fellow visitor! If you are here, you are probably wondering who am
+        I
+      </p>
       <OutlineButton icon="download" link="/">
         Download CV
       </OutlineButton>
