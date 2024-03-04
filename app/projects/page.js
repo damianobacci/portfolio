@@ -1,5 +1,11 @@
 import ProjectBox from "@/components/Projects/ProjectBox";
 
+export const metadata = {
+  title: "Complete list of projects",
+  description:
+    "A list of projects related to web development and programming, by Damiano Bacci",
+};
+
 export default function ProjectsPage() {
   return (
     <main>

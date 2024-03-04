@@ -18,44 +18,70 @@ export default function QuoteKeeper() {
       </OutlineButton>
       <h2 className="projectTitle">Project Purpose and Goal</h2>
       <p className="projectParagraph">
-        I always been amazed by minimalistic websites that gets the job done
-        without fancy graphics or UI. When I first moved to London, one of my
-        favourite websites was{" "}
-        <a href="https://londonears.com/index.html">Londonears</a>, a list of
-        gigs all around London presented in a very simple format: day, band,
-        location, price, link.
+        In my previous life as a journalist I used to collect quotes from
+        various people while reading the news. A good quote is a very useful
+        piece of information to display in an attractive way if you are building
+        an interactive longform for example.
       </p>
       <p className="projectParagraph">
-        With CityEars I wanted to reproduce the same kind of layout, but
-        benefitting from the modularity of Next.js ad MongoDB to have different
-        cities and the ability to submit events by requesting access to a form.
+        But I found my Excel sheet to be quite heavy, that necessitates a lot of
+        copy-pasting. I wanted to develop something easier that I could use
+        directly in the browser, so why not a Chrome extension?
       </p>
       <ProjectImage
-        alt="Cityears"
-        link="/images/projects/cityears/cityears.jpg"
+        alt="Quote Keeper"
+        link="/images/projects/quote-keeper/quote-keeper.png"
       />
-      <p className="projectParagraph">
-        For this project I wanted to try a challenge and do the styling with{" "}
-        <a href="https://tailwindcss.com/">Tailwind CSS</a>, being my first
-        attempt with it.
-      </p>
       <h2 className="projectTitle">Problems and Thought Process</h2>
       <p className="projectParagraph">
-        One of the main challenges so far has been managing the validation logic
-        for the Add Event form, I am planning the use the{" "}
-        <a href="https://formik.org/">Formik</a> library to avoid writing the
-        validation logic all by myself for every input.
+        Creating a{" "}
+        <a href="https://developer.chrome.com/docs/extensions/get-started">
+          Chrome extension
+        </a>{" "}
+        was totally new to me, and much to my surprise, I learned that are
+        developed with the common everyday languages of the web: HTML, CSS and
+        Javascript.
+      </p>
+      <p className="projectParagraph">
+        My extension has a simple job: storing quotes that can be easily
+        extracted from a webpage. First it basically creates an additional
+        Context menu to trigger the text extraction, and it generates a simple
+        form that it's injected onto the page, to save the data with additional
+        informations like tags and authors.
       </p>
       <ProjectImage
-        alt="Cityears"
-        link="/images/projects/cityears/cityears2.jpg"
+        alt="Quote Keeper"
+        link="/images/projects/quote-keeper/quote-keeper2.png"
+      />
+      <ProjectImage
+        alt="Quote Keeper"
+        link="/images/projects/quote-keeper/quote-keeper3.png"
+      />
+      <p className="projectParagraph">
+        Instead of relying to a database, I use LocalStorage to store the
+        quotes, which are then displayed in a simple table on different page,
+        which I can navigate from the main extension popup.
+      </p>
+      <p className="projectParagraph">
+        I use LocalStorage because this extension is designed to be like a
+        temporary repository. I give the option to search for specific quotes,
+        or to download them as a CSV.
+      </p>
+      <ProjectImage
+        alt="Quote Keeper"
+        link="/images/projects/quote-keeper/quote-keeper4.png"
       />
       <h2 className="projectTitle">Lessons Learned</h2>
       <p className="projectParagraph">
-        As my first mobile project, the biggest take home lesson is the
-        difference between Android and iOS development, and how I must take into
-        account both version while building with React Native (and how it's
-        impossible to test the iOS version without Apple devices).
+        Despite being made in HTML, CSS and JS, Chrome extensions have a
+        specific syntax and a structure that must be followed to make them work.
+        The biggest hurdle was getting used to this model, and required a narrow
+        perusing of the documentation.
+      </p>
+      <p className="projectParagraph">
+        However it opened a new realm of possibilities, to be able to create a
+        simple but very specific product that can make a job easier, while
+        staying in the browser environment.
       </p>
       <ProjectFooter />
     </main>

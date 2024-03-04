@@ -1,6 +1,11 @@
 import PostsList from "@/components/Posts/PostsList";
 import { getAllPosts } from "@/lib/posts-util";
 
+export const metadata = {
+  title: "Blog",
+  description: "A list of blog posts by Damiano Bacci",
+};
+
 export default function BlogPage() {
   const allPosts = getAllPosts();
   return (
