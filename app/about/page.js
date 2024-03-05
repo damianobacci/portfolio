@@ -8,7 +8,7 @@ export default function AboutPage() {
       <h1 className="title">ABOUT</h1>
       <h3 className="projectTitle">A journalist turned web developer</h3>
       <p className="projectParagraph">
-        If you are in this page, you are probably wondering who am I. The{" "}
+        If you are on this page, you are probably wondering who am I. The{" "}
         <a href="https://en.wikipedia.org/wiki/TL;DR">TL;DR</a> version is
         already in the title above, but keep reading if you are interested in
         the details.
@@ -24,8 +24,8 @@ export default function AboutPage() {
         I didn't arrive organically to coding, but rather with a series of
         circumstances: during my college studies I began to be interested in
         data journalism, a broad type of journalism which involves data
-        analysis, visual representation of the data, interactive storytelling.
-        At the end, a melting-pot of design, code and journalism.
+        analysis, visual representation of the data and interactive
+        storytelling. Basically, a melting-pot of design, code and journalism.
       </p>
       <p className="projectParagraph">
         As my career progressed, I noticed that I was less interested in the
