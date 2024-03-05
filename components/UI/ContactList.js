@@ -2,12 +2,7 @@ import styles from "./ContactList.module.css";
 import CopyButton from "./CopyButton";
 
 import { FaSquareXTwitter } from "react-icons/fa6";
-import {
-  FaLinkedin,
-  FaEnvelope,
-  FaStackOverflow,
-  FaGithub,
-} from "react-icons/fa";
+import { FaLinkedin, FaStackOverflow, FaGithub } from "react-icons/fa";
 
 import Link from "next/link";
 
@@ -16,7 +11,8 @@ export default function ContactList() {
     <>
       <h2 className="title">Contact me</h2>
       <p className={styles.email}>
-        Email me at{" "}
+        Email me at
+        <br />
         <Link href="mailto:damiano.bacci@gmail.com">
           damiano.bacci@gmail.com
         </Link>
