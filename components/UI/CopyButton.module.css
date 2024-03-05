@@ -1,0 +1,18 @@
+.copy {
+  margin-left: 0.4em;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 2px;
+  border: 1px solid white;
+}
+
+.copy:active {
+  transform: scale(0.9);
+}
+
+.copy:hover {
+  background-color: #00e870;
+  color: black;
+  border: 1px solid #00e870;
+}

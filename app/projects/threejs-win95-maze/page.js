@@ -21,32 +21,59 @@ export default function ThreeJSMaze() {
       </OutlineButton>
       <h2 className="projectTitle">Project Purpose and Goal</h2>
       <p className="projectParagraph">
-        As part of my studies, I am doing{" "}
+        As part of my studies, I embarked on{" "}
         <a href="https://threejs-journey.com/">
           Bruno Simon's Three.js Journey course
-        </a>
+        </a>{" "}
+        and was inspired to experiment with recreating a particular scene in 3D.
+        My thoughts immediately turned to the iconic Windows 3D Maze, evoking a
+        mix of nostalgia and frustration from the days of Windows 95. Why not
+        attempt to recreate it?
       </p>
       <p className="projectParagraph">
-        But I found my Excel sheet to be quite heavy, that necessitates a lot of
-        copy-pasting. I wanted to develop something easier that I could use
-        directly in the browser, so why not a Chrome extension?
+        I discovered a repository containing the original textures. Armed with
+        these and a trip-hop remix of the famous Windows 95 startup sound by
+        Brian Eno, I began modeling a miniature version of the maze.
       </p>
       <ProjectImage
-        alt="Quote Keeper"
-        link="/images/projects/quote-keeper/quote-keeper.png"
+        alt="Three JS Windows 95 Maze"
+        link="/images/projects/win95-maze/win95-maze.jpg"
       />
       <h2 className="projectTitle">Lessons Learned</h2>
       <p className="projectParagraph">
-        Despite being made in HTML, CSS and JS, Chrome extensions have a
-        specific syntax and a structure that must be followed to make them work.
-        The biggest hurdle was getting used to this model, and required a narrow
-        perusing of the documentation.
+        To generate the maze, I placed objects in the scene "by hand" rather
+        than programmatically, except for the outer walls of the maze, which
+        were generated using a loop. his manual approach made the scene
+        difficult to maintain, particularly if I needed to move a wall or expand
+        the maze. Implementing one of the many{" "}
+        <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">
+          algorithms for maze generations
+        </a>{" "}
+        would have made the project much more manageable.
       </p>
       <p className="projectParagraph">
-        However it opened a new realm of possibilities, to be able to create a
-        simple but very specific product that can make a job easier, while
-        staying in the browser environment.
+        3D graphics projects can be quite challenging and time-consuming,
+        especially when aiming for a higher level of complexity. In this case,
+        the camera was fixed to simplify the project. However, incorporating a
+        first-person shooter (FPS) style view would introduce additional
+        complexities, such as adding wall collisions and potentially enabling
+        interaction with various objects, like changing the ceiling's appearance
+        when a floating geometry is touched.
       </p>
+      <p className="projectParagraph">
+        Overall, this project was an immensely interesting experience that has
+        left me eager to explore more 3D projects, not just on the web but also
+        in game development.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MHGnSqr9kK8?si=BSuGEtnUsX83fS-o"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <ProjectFooter />
     </main>
   );

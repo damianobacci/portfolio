@@ -77,7 +77,7 @@ const Eyes = () => {
       "\r\n _   _ _   _   _                  _ _ \r\n| | | (_) | | | |                ( | )\r\n| |_| |_  | |_| |__   ___ _ __ ___V V \r\n|  _  | | | __| '_ \\ / _ \\ '__/ _ \\   \r\n| | | | | | |_| | | |  __/ | |  __/   \r\n\\_| |_/_|  \\__|_| |_|\\___|_|  \\___|   \r\n                                      \r\n                                      \r\n"
     );
     console.log(
-      "Try spinning your mouse around the eyes a bunch of times...👀"
+      "Try spinning your mouse around the page a bunch of times...👀"
     );
   }, []);
 

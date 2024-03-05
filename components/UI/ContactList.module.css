@@ -7,3 +7,7 @@
 .list > li {
   list-style: none;
 }
+
+.email {
+  margin-top: 1em;
+}

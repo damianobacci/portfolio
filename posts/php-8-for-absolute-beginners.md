@@ -1,6 +1,6 @@
 ---
 title: 'Exercises from the book "PHP 8 for Absolute Beginners"'
-date: "2024-02-22"
+date: "2024-03-05"
 ---
 
 ![PHP 8 for Absolute Beginners](php.jpg)

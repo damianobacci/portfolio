@@ -10,6 +10,10 @@
   margin-right: 0.5rem;
 }
 
+.outline:active {
+  transform: scale(0.9);
+}
+
 .outline:hover {
   color: black;
   background-color: #00e870;

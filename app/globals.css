@@ -61,6 +61,30 @@ a:hover {
   background-color: #00e870;
 }
 
+.divider {
+  width: 45%;
+  margin: 0 auto;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 232, 112, 1) 50%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  background-size: 300% 100%; /* Increase the size of the gradient to make the flow smoother */
+  margin-bottom: 1em;
+  animation: slide 7s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -200% 0; /* Extend the movement to the full width of the gradient */
+  }
+}
+
 @media (min-width: 450px) {
   body {
     width: 40vw;
