@@ -73,7 +73,7 @@ a:hover {
   );
   background-size: 300% 100%; /* Increase the size of the gradient to make the flow smoother */
   margin-bottom: 1em;
-  animation: slide 7s linear infinite;
+  animation: slide 5s linear infinite;
 }
 
 @keyframes slide {
