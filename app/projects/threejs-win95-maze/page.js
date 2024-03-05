@@ -43,7 +43,7 @@ export default function ThreeJSMaze() {
       <p className="projectParagraph">
         To generate the maze, I placed objects in the scene "by hand" rather
         than programmatically, except for the outer walls of the maze, which
-        were generated using a loop. his manual approach made the scene
+        were generated using a loop. This manual approach made the scene
         difficult to maintain, particularly if I needed to move a wall or expand
         the maze. Implementing one of the many{" "}
         <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">
