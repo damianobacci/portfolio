@@ -78,7 +78,7 @@ const Eyes = () => {
     );
     console.log("It's always cool when you hide some easter eggs, isn't it?");
     console.log(
-      "Try spinning your mouse in circle around the page for a bunch of times...👀"
+      "Try spinning your mouse in circle around the center of the page for a bunch of times...👀"
     );
   }, []);
 
