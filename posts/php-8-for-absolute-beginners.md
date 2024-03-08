@@ -1,6 +1,6 @@
 ---
 title: 'Exercises from the book "PHP 8 for Absolute Beginners"'
-date: "2024-03-05"
+date: "2024-03-08"
 ---
 
 ![PHP 8 for Absolute Beginners](php.jpg)
@@ -14,24 +14,24 @@ The complete code is also available on [GitHub](https://github.com/damianobacci/
 Create a simple PHP program which displays your name, address, and paragraph of information about you using the _echo_ instruction.
 
 ```php
+
 <?php
 
 echo "Damiano Bacci";
 echo "05035 Narni, Terni, Italy";
 echo "I am junior web developer looking forward to learn PHP.";
 
-?>
 ```
 
 Create a PHP program which displays HTML code within the echo instruction.
 
 ```php
+
 <?php
 
 echo "<h1>This is a simple HTML page</h1>";
 echo "<p>The page has a title and a paragraph.</p>";
 
-?>
 ```
 
 **Chapter 2: Understanding PHP, Language Basics**
@@ -69,7 +69,6 @@ require 'templates/page.php'; //single comment
 
 echo $page;
 
-?>
 ```
 
 ```php
@@ -82,8 +81,6 @@ class Page_Data {
     public string $css = "";
     public string $embeddedStyle = "";
 }
-
-?>
 
 ```
 
@@ -105,8 +102,6 @@ $page = "
 </body>
 </html>
 ";
-
-?>
 
 ```
 
@@ -152,7 +147,44 @@ class Page_Data {
         }
 }
 
-?>
 ```
 
 A form to calculate a person's body mass index (BMI), based on the person's height and weight.
+
+```php
+
+<?php
+$style = "
+<style>
+nav a:nth-child(5) {
+    text-decoration: underline;
+}
+.label {
+    display: block;
+}
+</style>";
+
+$quizIsSubmitted = isset($_POST["bmi-submitted"]);
+if ($quizIsSubmitted) {
+    $weight = $_POST["weight"];
+    $height = $_POST["height"];
+    $bmi = $weight / (2 * ($height/100));
+    $info = showQuizResponse($bmi);
+} else {
+    $info = "
+<form method='post' action='index.php?page=bmi'>
+<p>Calculate your BMI with this tool.</p>
+<label class='label 'for='weight'>Weight in KG</label><input type='number' name='weight' id='weight'/>
+<label class='label for='height'>Height in CM</label><input type='number' name='height' id='height'/>
+<input type='submit' name='bmi-submitted' value='Calculate BMI'/>
+</form>";
+}
+
+function showQuizResponse( string $bmi) {
+    $formattedBMI = number_format($bmi,2);
+    $response = "<p>Your BMI is $formattedBMI</p><p>More precisely, it's $bmi</p>";
+    $response .= "<p><a href='index.php?page=bmi'>Calculate again?</a></p>";
+    return $response;
+}
+
+```
