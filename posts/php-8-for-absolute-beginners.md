@@ -36,7 +36,7 @@ echo "<p>The page has a title and a paragraph.</p>";
 
 **Chapter 2: Understanding PHP, Language Basics**
 
-Complete the personal portfolio site from this chapter.
+Complete the personal portfolio site from this chapter (the views and the navbar are not included).
 
 ```php
 //index.php
@@ -109,3 +109,50 @@ $page = "
 ?>
 
 ```
+
+**Chapter 3: Form Management**
+
+A class with getters and setters.
+
+```php
+
+<?php
+class Page_Data {
+    private string $title = "";
+    private string $content = "";
+    public string $css = "";
+    public string $embeddedStyle = "";
+    function __construct() {
+        $this->title = "Title goes here";
+        $this->content = "Page contente goes here";
+        $this->css = "CSS goes here";
+        $this->embeddedStyle = "Embedded CSS goes here";
+        }
+
+        public function getTitle(): string {
+            return $this->title;
+        }
+        public function setTitle(string $value) {
+            if (strpos($value,"^")) {
+                $this->title = $value;
+        }
+    }
+        public function getContent(): string {
+            return $this->content;
+        }
+        public function setContent(string $value) {
+            if (strpos($value,"<")) {
+                $this->content = $value;
+        }
+    }
+        public function appendContent(string $value) {
+            if (strpos($value,"<")) {
+                $this->content .= $value;
+        }
+        }
+}
+
+?>
+```
+
+A form to calculate a person's body mass index (BMI), based on the person's height and weight.
