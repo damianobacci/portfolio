@@ -236,9 +236,41 @@ if ($formIsSubmitted) {
 
 function convert( string $currency, string $converted, string $amount ) {
     $response = file_get_contents("https://v6.exchangerate-api.com/v6/API_KEY/pair/$currency/$converted/$amount");
-    $response =json_decode($response);
+    $response = json_decode($response);
     $conversion_result = $response->conversion_result;
     return $conversion_result;
+}
+
+```
+
+**Chapter 4 Building a Dynamic Image Gallery**
+
+Uploader class for the image gallery.
+
+```php
+
+<?php
+class Uploader {
+    private $fileName;
+    private $fileData;
+    private $destination;
+    public function __construct($key) {
+        $this->fileName = $_FILES[$key]['name'];
+        $this->fileData = $_FILES[$key]['tmp_name'];
+    }
+    public function saveIn($folder) {
+        $this->destination = $folder;
+    }
+    public function save() {
+        $folderIsWritable = is_writable($this->destination);
+        if ($folderIsWritable) {
+            $name = "$this->destination/$this->fileName";
+            $success = move_uploaded_file($this->fileData, $name);
+        } else {
+            $success = false;
+        }
+        return $success;
+    }
 }
 
 ```
