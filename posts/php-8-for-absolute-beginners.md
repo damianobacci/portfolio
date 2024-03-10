@@ -272,5 +272,4 @@ class Uploader {
         return $success;
     }
 }
-
 ```
