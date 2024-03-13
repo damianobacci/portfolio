@@ -1,5 +1,5 @@
 ---
-title: 'Exercises from the course Complete C# Masterclass"'
+title: "Exercises from the course Complete C# Masterclass"
 date: "2024-03-13"
 ---
 
@@ -7,7 +7,7 @@ date: "2024-03-13"
 
 Parse the string variables from below into the correct datatypes:
 
-```c#
+```csharp
 public static void Main(string[] args)
 {
     string stringForFloat = "0.85"; // datatype should be float
