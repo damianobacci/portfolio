@@ -17,3 +17,7 @@ public static void Main(string[] args)
     Console.WriteLine("Int = {0}, Float = {1}", intNum, floatNum);
 }
 ```
+
+```csharp
+Console.WriteLine("Int = {0}, Float = {1}", intNum, floatNum);
+```
