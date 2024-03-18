@@ -45,7 +45,7 @@ export default function AboutPage() {
         </a>
         .
       </p>
-      <OutlineButton icon="download" link="/cv-DamianoBacci.pdf">
+      <OutlineButton icon="download" link="/cv_DamianoBacci.pdf">
         Download CV
       </OutlineButton>
       <ContactList />
