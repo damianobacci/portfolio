@@ -7,8 +7,8 @@ export default function JsRPS() {
   return (
     <main>
       <ProjectHeader
-        title="Javascript Rock, Paper & Scissors"
-        description="A Javascript rendition of the classic rock, paper and scissors game."
+        title="Typescript Rock, Paper & Scissors"
+        description="A Typescript rendition of the classic rock, paper and scissors game."
       />
       <OutlineButton
         icon="code"
@@ -24,9 +24,9 @@ export default function JsRPS() {
       </OutlineButton>
       <h2 className="projectTitle">Project Purpose and Goal</h2>
       <p className="projectParagraph">
-        To deepen my understanding of CSS, vanilla JavaScript, and browser APIs
-        such as the DOM API, I created a simple rock, paper, scissors game with
-        scoring tallies inspired by the one featured in{" "}
+        To deepen my understanding of CSS, vanilla JavaScript, Typescript and
+        browser APIs such as the DOM API, I created a simple rock, paper,
+        scissors game with scoring tallies inspired by the one featured in{" "}
         <a href="https://threejs-journey.com/">Alex Kidd in Miracle World</a>{" "}
         for the Sega Master System.
       </p>
@@ -38,7 +38,8 @@ export default function JsRPS() {
       <p className="projectParagraph">
         Building a game entirely from scratch on the web involved a few steps.
         The game's logic is simple and straightforward, and employing vanilla
-        JavaScript facilitates the addition of features with ease.
+        JavaScript facilitates the addition of features with ease, along with
+        Typescript for additional type safety.
       </p>
       <p className="projectParagraph">
         Currently, the program is somewhat basic. Ideally, it should declare a

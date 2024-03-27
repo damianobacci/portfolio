@@ -12,7 +12,7 @@ export default function ProjectsPage() {
       <h1 className="title">All Projects</h1>
       <ProjectBox
         title="Remembrify"
-        description="Remembrify is a SPA made in React to mantain healthy routines while working."
+        description="Remembrify is a SPA made in React + Typescript to mantain healthy routines while working."
         more="/projects/remembrify"
       />
       <ProjectBox
@@ -26,6 +26,11 @@ export default function ProjectsPage() {
         more="/projects/cityears"
       />
       <ProjectBox
+        title="PHP ticket generator"
+        description="A ticket generator in PHP to generate tickets from a SQLite database."
+        more="/projects/php-ticket-generator"
+      />
+      <ProjectBox
         title="Quote Keeper"
         description="Quote Keeper is a Google Chrome extension to save your quotes while you are browsing the news."
         more="/projects/quote-keeper"
@@ -36,8 +41,8 @@ export default function ProjectsPage() {
         more="/projects/threejs-win95-maze"
       />
       <ProjectBox
-        title="Javascript Rock, Paper & Scissors"
-        description="A Javascript rendition of the classic rock, paper and scissors game."
+        title="Typescript Rock, Paper & Scissors"
+        description="A Typescript rendition of the classic rock, paper and scissors game."
         more="/projects/js-rock-paper-scissors"
       />
       {/* <ProjectBox

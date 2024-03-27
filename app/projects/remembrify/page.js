@@ -13,7 +13,7 @@ export default function Remembrify() {
     <main>
       <ProjectHeader
         title="Remembrify"
-        description="Remembrify is a Single Page Application (SPA) made in React. The app allows you to set multiple reminders with a sound alarm, helping you to maintain your health routines while you are at your desk, without losing focus."
+        description="Remembrify is a Single Page Application (SPA) made in React + Typescript. The app allows you to set multiple reminders with a sound alarm, helping you to maintain your health routines while you are at your desk, without losing focus."
       />
       <OutlineButton
         icon="code"
@@ -90,12 +90,10 @@ export default function Remembrify() {
       <h2 className="projectTitle">Lessons Learned</h2>
       <p className="projectParagraph">
         I had to provide some kind of validation logic in the "Add your
-        countdown" component, to not rely on the built-in browser validation
-        logic that could be easily bypassed. I managed the Change and Blur
-        events for form inputs, and this proved to be a challenging yet
-        informative experience, especially for a form with just two inputs,
-        teaching me valuable lessons for managing more complex forms in the
-        future.
+        countdown" component. I managed the Change and Blur events for form
+        inputs, and this proved to be a challenging yet informative experience,
+        especially for a form with just two inputs, teaching me valuable lessons
+        for managing more complex forms in the future.
       </p>
       <p className="projectParagraph">
         Moreover, hosting the app on a website introduced certain limitations.
@@ -104,6 +102,14 @@ export default function Remembrify() {
         <a href="https://www.electronjs.org/">Electron</a> as a solution for
         creating desktop applications from web technologies is something I plan
         to consider moving forward.
+      </p>
+      <p className="projectParagraph">
+        The project was not originally designed with TypeScript integration in
+        mind; however, I took the initiative to refactor it to utilize
+        TypeScript. This decision was motivated by the desire to enhance type
+        safety, incorporate custom types, and effectively manage event types
+        within React, thereby elevating the project's code quality and
+        maintainability.
       </p>
       <ProjectFooter />
     </main>

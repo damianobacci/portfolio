@@ -37,7 +37,7 @@ export default function AboutPage() {
       <p className="projectParagraph">
         I decided to embark full time in web development and computer
         programming. I am currently learning PHP and expanding my knowledge of
-        Javascript, React and Next.js while building personal projects, but I
+        Typescript, React and Next.js while building personal projects, but I
         also want to get a proper education in computer science, tackling the
         full{" "}
         <a href="https://github.com/ossu/computer-science">
