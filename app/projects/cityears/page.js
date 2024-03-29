@@ -14,7 +14,7 @@ export default function CityEars() {
         icon="code"
         link="https://github.com/damianobacci/cityears"
       >
-        View Code (private repo)
+        View Code
       </OutlineButton>
       <OutlineButton icon="live" link="https://city-ears.vercel.app/">
         View Live

@@ -17,7 +17,7 @@ export default function Home() {
         <h2 className="title">Featured Projects</h2>
         <ProjectBox
           title="Remembrify"
-          description="Remembrify is a SPA made in React to mantain healthy routines while working."
+          description="Remembrify is a SPA made in React + Typescript to mantain healthy routines while working."
           more="/projects/remembrify"
         />
         <ProjectBox
