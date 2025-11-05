@@ -1,23 +1,18 @@
 import TextDivider from "@/components/UI/TextDivider";
 import OutlineButton from "@/components/UI/OutlineButton";
 import ContactList from "@/components/UI/ContactList";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
     <main>
       <h1 className="title">ABOUT</h1>
-      <h3 className="projectTitle">A journalist turned web developer</h3>
+      <h3 className="projectTitle">A journalist turned software developer</h3>
       <p className="projectParagraph">
         If you are on this page, you are probably wondering who am I. The{" "}
         <a href="https://en.wikipedia.org/wiki/TL;DR">TL;DR</a> version is
         already in the title above, but keep reading if you are interested in
         the details.
-      </p>
-      <p className="projectParagraph">
-        I am somewhat of an "old" junior web developer. My first experience with
-        web development was a simple website created in Microsoft Frontpage to
-        record the tales of my group of high school friends, and it was a mess
-        of static webpages that lasted more than it should have.
       </p>
       <TextDivider />
       <p className="projectParagraph">
@@ -35,15 +30,7 @@ export default function AboutPage() {
       </p>
       <TextDivider />
       <p className="projectParagraph">
-        I decided to embark full time in web development and computer
-        programming. I am currently learning PHP and expanding my knowledge of
-        Typescript, React and Next.js while building personal projects, but I
-        also want to get a proper education in computer science, tackling the
-        full{" "}
-        <a href="https://github.com/ossu/computer-science">
-          OSSU Computer Science curriculum
-        </a>
-        .
+        I have been coding full time for two years now, working mostly with JS/TS on the frontend (Vue.js) and backend (Node.js). I worked for companies ranging from the retail sector to the industrial IoT one. It made me appreciate more how deep the computer science rabbit hole is, teaching me to get to the bone of problems and learn as much as possible on the go. Check out my <Link href={"https://www.goodreads.com/user/show/31928098-damiano-bacci"}>Goodreads</Link> if you want to see what I am currently studying.
       </p>
       <OutlineButton icon="download" link="/cv_DamianoBacci.pdf">
         Download CV

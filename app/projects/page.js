@@ -9,7 +9,7 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <main>
-      <h1 className="title">All Projects</h1>
+      <h1 className="title">Projects & Experiments</h1>
       <ProjectBox
         title="Remembrify"
         description="Remembrify is a SPA made in React + Typescript to mantain healthy routines while working."
@@ -20,11 +20,11 @@ export default function ProjectsPage() {
         description="EcoWatcher is a mobile app made in React Native to report litter in your city by simply snapping a photo."
         more="/projects/ecowatcher"
       />
-      <ProjectBox
+      {/* <ProjectBox
         title="CityEars (under development)"
         description="CityEars is a curated list of musical gigs in Italian cities built with Next.js."
         more="/projects/cityears"
-      />
+      /> */}
       <ProjectBox
         title="PHP ticket generator"
         description="A ticket generator in PHP to generate tickets from a SQLite database."

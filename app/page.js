@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       {/* <Splash /> */}
       <Hero />
-      <section>
+      {/* <section>
         <h2 className="title">Featured Projects</h2>
         <ProjectBox
           title="Remembrify"
@@ -25,13 +25,8 @@ export default function Home() {
           description="EcoWatcher is a mobile app made in React Native to report litter in your city by simply snapping a photo."
           more="/projects/ecowatcher"
         />
-        <ProjectBox
-          title="CityEars (under development)"
-          description="CityEars is a curated list of musical gigs in Italian cities built with Next.js."
-          more="/projects/cityears"
-        />
         <Link href="/projects">View all projects & experiments</Link>
-      </section>
+      </section> */}
       <section>
         <h2 className="title">Blog</h2>
         <PostsList posts={lastPosts} />

@@ -22,6 +22,14 @@
   animation: 1s blink ease infinite;
 }
 
+.inactive {
+  height: 7px;
+  width: 7px;
+  background-color: #e80049;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 @keyframes blink {
   from,
   to {
